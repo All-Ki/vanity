@@ -29,6 +29,8 @@ const capitalizedLabel = label.toUpperCase();
 const dates = generateCommitDates(capitalizedLabel);
 
 (async () => {
+  await execPromise("git rebase --root --no-keep-empty");
+
   const commitCount = 50;
   for (const date of dates) {
     console.log("Committing for date: ", date);
