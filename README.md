@@ -13,7 +13,7 @@ Start by forking this repo. The vanity commits will be on this repo, so that you
 Once you have forked the repo, clone it to your local machine. Then...
 
 - npm i
-- node github-commit-labeller.js <yourmessage>
+- node github-commit-labeller.js _yourmessage_
 
 ...
 A branch named `disposable` will be created with the commits.
