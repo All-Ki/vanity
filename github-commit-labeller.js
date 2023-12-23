@@ -29,7 +29,12 @@ const capitalizedLabel = label.toUpperCase();
 const dates = generateCommitDates(capitalizedLabel);
 
 (async () => {
-  await execPromise("git branch disposable -D");
+  try {
+    await execPromise("git branch disposable -D");
+  } catch (e) {
+    // no-op
+    // This can happen on first run
+  }
   await execPromise("git checkout -b disposable");
 
   const commitCount = 30;
