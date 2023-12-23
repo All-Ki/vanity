@@ -1,21 +1,21 @@
 {
-  "name": "github-commit-labeller",
+  "name": "github-contribution-billboard",
   "version": "1.0.0",
   "description": "",
-  "main": "github-commit-labeller.js",
+  "main": "github-contribution-billboard.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ascendzor/github-commit-labeller.git"
+    "url": "git+https://github.com/Ascendzor/github-contribution-billboard.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ascendzor/github-commit-labeller/issues"
+    "url": "https://github.com/Ascendzor/github-contribution-billboard/issues"
   },
-  "homepage": "https://github.com/Ascendzor/github-commit-labeller#readme",
+  "homepage": "https://github.com/Ascendzor/github-contribution-billboard#readme",
   "dependencies": {
     "js-pixel-fonts": "^1.6.0",
     "luxon": "^3.4.4"

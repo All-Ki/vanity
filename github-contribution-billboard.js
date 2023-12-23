@@ -4,7 +4,7 @@ const execPromise = require("./exec-promise");
 const label = process.argv[2];
 if (!label) {
   console.log("Please include a label. Here is an example: ");
-  console.log("node github-commit-labeller.js HACKER");
+  console.log("node github-contribution-billboard.js HACKER");
   return;
 }
 
@@ -20,7 +20,7 @@ if (label.split("").some((char) => !isAlphaNumeric(char))) {
   console.log(
     "Please use only capital letters for your label. Here is an example: "
   );
-  console.log("node github-commit-labeller.js HACKER");
+  console.log("node github-contribution-billboard.js HACKER");
   return;
 }
 

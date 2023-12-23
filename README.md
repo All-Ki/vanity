@@ -1,4 +1,4 @@
-# github-commit-labeller
+# github-contribution-billboard
 
 A tool to let you label your github commit contribution grid.
 
@@ -13,7 +13,7 @@ Start by forking this repo. The vanity commits will be on this repo, so that you
 Once you have forked the repo, clone it to your local machine. Then...
 
 - npm i
-- node github-commit-labeller.js _yourmessage_
+- node github-contribution-billboard.js _yourmessage_
 
 ...
 A branch named `disposable` will be created with the commits.
@@ -24,4 +24,4 @@ PS: If you would like to overwrite the message to a different message, I highly 
 
 ## Example
 
-- node github-commit-labeller.js HACKERN
+- node github-contribution-billboard.js HACKERN
