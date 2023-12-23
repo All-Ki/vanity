@@ -38,12 +38,16 @@ const dates = generateCommitDates(capitalizedLabel);
   }
   await execPromise("git checkout -b disposable");
 
+  console.log(
+    "Starting process to create commits, this can take up to 30 seconds to complete"
+  );
+
   const commitCount = 30;
   for (const date of dates) {
-    console.log("Committing for date: ", date);
+    console.log("Creating commits for: ", date);
     for (const _ of Array.from({ length: commitCount })) {
       await execPromise(
-        `git commit --date "${date}" -m "labelling" --allow-empty`
+        `git commit --date "${date}" -m "billboarding" --allow-empty`
       );
     }
   }
