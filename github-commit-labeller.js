@@ -29,8 +29,8 @@ const capitalizedLabel = label.toUpperCase();
 const dates = generateCommitDates(capitalizedLabel);
 
 (async () => {
+  await execPromise("git branch disposable -D");
   await execPromise("git checkout -b disposable");
-  await execPromise("git rebase --root --no-keep-empty");
 
   const commitCount = 30;
   for (const date of dates) {
