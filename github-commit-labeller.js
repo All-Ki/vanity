@@ -29,6 +29,7 @@ const capitalizedLabel = label.toUpperCase();
 const dates = generateCommitDates(capitalizedLabel);
 
 (async () => {
+  await execPromise("git checkout -b disposable");
   await execPromise("git rebase --root --no-keep-empty");
 
   const commitCount = 30;
@@ -40,4 +41,6 @@ const dates = generateCommitDates(capitalizedLabel);
       );
     }
   }
+  await execPromise("git push origin disposable --force");
+  await execPromise("git checkout main");
 })();
