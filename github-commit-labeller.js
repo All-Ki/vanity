@@ -31,6 +31,7 @@ const dates = generateCommitDates(capitalizedLabel);
 (async () => {
   try {
     await execPromise("git branch disposable -D");
+    await execPromise("git push origin disposable --delete");
   } catch (e) {
     // no-op
     // This can happen on first run
