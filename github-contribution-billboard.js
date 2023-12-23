@@ -18,7 +18,7 @@ const isAlphaNumeric = (char) => {
 };
 if (label.split("").some((char) => !isAlphaNumeric(char))) {
   console.log(
-    "Please use only capital letters for your label. Here is an example: "
+    "Please use only alphanumeric characters for your label. Here is an example: "
   );
   console.log("node github-contribution-billboard.js HACKER");
   return;
