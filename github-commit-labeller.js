@@ -31,6 +31,7 @@ const dates = generateCommitDates(capitalizedLabel);
 (async () => {
   const commitCount = 50;
   for (const date of dates) {
+    console.log("Committing for date: ", date);
     for (const _ of Array.from({ length: commitCount })) {
       await execPromise(
         `git commit --date "${date}" -m "labelling" --allow-empty`
