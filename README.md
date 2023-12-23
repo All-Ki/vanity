@@ -8,6 +8,10 @@ A tool to let you label your github commit contribution grid.
 
 ## Usage
 
+Start by forking this repo. The vanity commits will be on this repo, so that you can delete it if you'd like to remove the message.
+
+Once you have forked the repo, clone it to your local machine. Then...
+
 - npm i
 - node github-commit-labeller.js <yourmessage>
 
