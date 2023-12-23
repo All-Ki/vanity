@@ -31,7 +31,7 @@ const dates = generateCommitDates(capitalizedLabel);
 (async () => {
   await execPromise("git rebase --root --no-keep-empty");
 
-  const commitCount = 10;
+  const commitCount = 30;
   for (const date of dates) {
     console.log("Committing for date: ", date);
     for (const _ of Array.from({ length: commitCount })) {
