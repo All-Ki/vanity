@@ -2,6 +2,8 @@
 
 A tool to let you label your github commit contribution grid.
 
+![example.png](example.png)
+
 ## pre-requisites
 
 - nodejs 16+ recommended
